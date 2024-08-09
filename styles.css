@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+}
+
+.title {
+    padding: 20px;
+    font-size: 30px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+
+.scoreboard {
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: lightseagreen;
+    width: 400px;
+    height: 4em;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-container {
+    margin: 50px auto;
+    padding: 20px;
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.results-container {
+    margin: 50px auto;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
