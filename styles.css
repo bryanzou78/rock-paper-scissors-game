@@ -17,12 +17,12 @@ body {
 }
 
 .scoreboard {
-    margin: 50px auto;
+    margin: 40px auto;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
     background-color: lightseagreen;
-    width: 400px;
+    width: 600px;
     height: 4em;
     border: 2px solid black;
     border-radius: 10px;
@@ -32,15 +32,16 @@ body {
 }
 
 .button-container {
-    margin: 50px auto;
-    padding: 20px;
-    width: 800px;
+    margin: 30px auto;
+    padding: 10px;
+    width: 1000px;
     display: flex;
     justify-content: space-evenly;
 }
 
-.button {
-    padding: 30px;
+.button, .user-versus, .computer-versus {
+    margin: 10px;
+    padding: 20px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -52,12 +53,59 @@ body {
     cursor: pointer;
 }
 
+.versus-container {
+    background-color: lightseagreen;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    /* container-type: inline-size; */
+}
+
+.animate-user {
+    animation: move-right 1s;
+}
+
+.animate-computer {
+    animation: move-left 1s;
+}
+
+.versus-container span {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
 
 .results-container {
-    margin: 50px auto;
+    margin: 30px auto;
     padding: 20px;
     font-size: 24px;
     font-weight: bold;
     display: flex;
     justify-content: center;
+}
+
+@keyframes move-right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15vw);
+        
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes move-left {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-15vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

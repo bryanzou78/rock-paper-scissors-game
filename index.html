@@ -12,13 +12,6 @@
 <body>
     <h1 class="title">Rock Paper Scissors Game</h1>
 
-    <div class="scoreboard">
-        <span>User: </span>
-        <span id="user-score"></span>
-        <span>Computer: </span>
-        <span id="computer-score"></span>
-    </div>
-
     <div class="button-container">
         <div class="button" id="rock-btn">
             <img src="images/rock.svg" alt="Rock">
@@ -30,10 +23,22 @@
             <img src="images/scissors.svg" alt="Scissors">
         </div>
     </div>
-
-
+    
     <div class="results-container">
-        <p class="results"></p>
+        <p class="results">Choose Rock, Paper, or Scissors</p>
+    </div>
+    
+    <div class="scoreboard">
+        <span>User: </span>
+        <span id="user-score"></span>
+        <span>Computer: </span>
+        <span id="computer-score"></span>
+    </div>
+    
+    <div class="versus-container">
+        <div class="user-versus"></div>
+        <span>vs</span>
+        <div class="computer-versus"></div>
     </div>
 
     <script src="script.js"></script>
